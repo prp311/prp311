@@ -1,4 +1,20 @@
-# prp311
-# prp311
-# prp311
-# prp311
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Redirection</title>
+    <script type = "text/javascript">
+        function Redirect() {
+			let urlprefix = "https://wa.me/91";
+			let url = urlprefix +  document.getElementById("ccode").value  + document.getElementById("fname").value 
+			window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+	
+	<label for="fname">Whatsapp Number:</label>
+	<input type="text" id="ccode" name="ccode" placeholder="91"  size="2"> &nbsp
+    <input type="text" id="fname" name="fname" size="10">
+    <input type="button" value="Open Whatsapp" onclick="Redirect()"/>
+</body>
+</html>
